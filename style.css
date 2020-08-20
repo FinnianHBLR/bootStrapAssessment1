@@ -1,14 +1,16 @@
 body {
-    font-size: 1.1em;
+    
     background-color: #f4f4f4;
     font-family: Arial, Helvetica, sans-serif;
+    /*Mobile width is 95%*/
 
 }
+
 
 /*ONLY APPLIES TO NAVBAR BELOW*/
 
 /*Navbar Logo*/
-.customNav{
+.customNav {
     background-color: #2a3a4a;
     min-height: 7vh;
     border-bottom: 0.2em solid #2a9b35;
@@ -54,43 +56,169 @@ body {
     color: #FFC0CB;
 }
 
-
-/*Below is a non bootstrap drop-down for drop down menus. This only is active after 992 for PC users (Mobile first method)*/
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover*/
-
-@media only screen and (min-width: 992px) {
-.dropdown:hover .dropdown-content {
-    display: block;
-    }
-
-    .dropdown:hover .dropbtn {
-        background-color: #007491;
-    }
-
-    .dropdown-content a {
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
- 
-}
-
 /*ONLY APPLIES TO NAVBAR ABOVE*/
 
-/*HomePage*/
+/*-----------------------HomePage-----------------------*/
 
 body .homePage {
     background-image: url(resources/showcase-image.jpeg);
+    color: white;    
+}
+
+
+.home .container {
+    /*This sets the width of the container*/
+    width: 95%;
+    min-height: 40vh;
+    /*Padding to the top of the container */
+    padding-top: 4em;
+}
+
+.home p {
+    font-size: 1.1em;
+}
+
+.home h1 { 
+    /*Bootstrap already sets h1 to 2.5rem. The design document specifies 2.0em, so it is being overridden*/
+    font-size: 2.0em !important;
+}
+
+/*-----------------------HomePage-----------------------*/
+
+/*-----------------------MyTech&Bio-------------------------*/
+
+.myTechBio .row .myTech {
+    background-color: #007491;
+}
+
+.myTechBio .row .myTech h1 {
+    font-size: 1.5em; 
+}
+
+.myTechBio .row .myTech ul li p {
+    font-size: 1.1em; 
+}
+
+/*Bio*/
+.myTechBio .row .bio {
+    background-color: #2a9b35;
+}
+.myTechBio .row .bio h1 {
+    font-size: 1.5em;
+}
+
+.myTechBio .row .bio p {
+    font-size: 1.2em;
+}
+
+.myTechBio .row .bio img {
+    height: 15em;
+    width: 15em;
+}
+
+/*Below is just for a hyperlink in the bio section From: https://w3bits.com/rainbow-text/*/
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    color: transparent;
+}
+
+/*-----------------------MyTech-------------------------*/
+
+/*-----------------------DevSkills-----------------------*/
+.devSkills .container .row .card {
+    background-color: #E0E0E0;
+}
+.devSkills .container .row p {
+ font-size: 1.2em;
+}
+
+.devSkills .container .row h5 {
+    font-size: 1.5em;
+}
+.devSkills .container .row .card-img-top {
+    /*Wdith is image size, padding seperates the image from the sides*/
+    width: 10em;
+    padding: 1em;
+}
+
+/*----------------------Statement of Authenticity-----------*/
+
+.authSate {
+    background-color: tomato;
+}
+
+.authSate h1 {
+    font-size: 1.5em;
+}
+
+.authSate p {
+    font-size: 1.2em;
+}
+
+/*------------Footer----------------*/
+.customFooter {
     color: white;
+    background-color: #2a3a4a;
+}
+
+
+/*This is for a tablets*/
+
+@media only screen and (min-width: 600px) {
+    .customLogo {
+        height: 3em;
+        width: 3em;
+    }
+
+    .home .container {
+        width: 90%;
+        min-height: 30vh;
+    }
+
+    .home h1 {
+        /*Bootstrap already sets h1 to 2.5rem. The design document specifies 2.0em, so it is being overridden*/
+        font-size: 3.0em !important;
+    }
+
+    .home p {
+        font-size: 1.3em;
+    }
     
 }
 
 
-/*Smarphone Logo Size. Mobile First Aboce*/
 
-@media only screen and (min-width: 768px) {
-    .customLogo {
-        height: 3em;
-        width: 3em;
+/*This is for a PC's*/
+
+@media only screen and (min-width: 992px) {
+/*Below is a non bootstrap drop-down for drop down menus. This only is active after 992 for PC users (Mobile first method)*/
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    .dropdown:hover > .dropbtn {
+        background-color: #007491;
+    }
+
+    .dropdown-content > a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .home .container {
+        width: 80%;
+
+    }
+
+    .home h1 {
+        /*Bootstrap already sets h1 to 2.5rem. The design document specifies 2.0em, so it is being overridden*/
+        font-size: 3.3em !important;
+    }
+
+    .home p {
+        font-size: 1.5em;
     }
 }
