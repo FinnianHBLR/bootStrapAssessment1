@@ -61,8 +61,7 @@ function getXML(){
             //If everyhting is ok we will now load the xml file
             
             //document.getElementById("xmlTable").innerHTML = this.responseText;
-
-            var i;
+            
             var xmlDocument =  this.responseXML;
             var table ="";
         
@@ -97,3 +96,49 @@ function getXML(){
 }
     
 
+function toggleImg() {
+    var togImg = document.getElementById("imgid");
+
+    if(togImg.style.visibility == "hidden") {
+        togImg.style.visibility = "visible";
+    } else {
+        togImg.style.visibility = "hidden";
+    }
+}
+
+
+function checkVowel() {
+    var enteredText = document.getElementById("vowelInput").value.toUpperCase();
+
+    if (enteredText.length == 1) {
+        var vowelList = "AEIOUY";
+
+        var position = vowelList.indexOf(enteredText)
+        //This indexOf() methid returns -1 if the the substring has not occured in the other sting. 
+        //IF true it will giv ethe position.
+        if (position >= 0) {
+            document.getElementById("vowelOutput").innerHTML = enteredText + " Is A Vowel"
+        } else {
+            
+            document.getElementById("vowelOutput").innerHTML = enteredText + " Is NOT Vowel"
+
+        }
+
+    } else {
+    
+        outputVowels.innerHTML = "INVALID ONLY 1 CHARACTER";
+    }
+}
+
+function checkGST() {
+    var input = document.getElementById("gstInput").value;
+    var output = document.getElementById("gstOutput");
+
+    output.innerHTML = input*0.15;
+}
+
+
+function checkDate() {
+    //I know this probably looks bad, but I challanged myself to put this in one line.... so here it is...
+    document.getElementById("dateOutput").innerHTML = newVar = new Date(document.getElementById("dateInput").value).toDateString().substring(3);
+}

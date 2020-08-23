@@ -100,30 +100,41 @@
         <!--Showcase-->
         <div class="xmlHomePage">
             <div class="container">
-                <h1>Google Forms</h1>
+                <h1>Javascript Exercises</h1>
                 <br>
-                <p>Form generated from Google forms. <a
-                        href="https://docs.google.com/spreadsheets/d/1Nt-Dl7BQFA-mX0HG2qPTc4Qfs9KhZ4YecioaeVzui6g/edit?usp=sharing">Link
-                        to results spreadsheet</a></p>
+                <p>Javascript is a scripting launguage that allows developers to add great functionality to web
+                    applications.</p>
             </div>
         </div>
     </section>
-
-    <section class="googleForm">
-        <!--Uses flex box to center the google form-->
-        <div class="d-flex justify-content-center">
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdHbs_t0PnPCLZL1cg0Lce0XrDHnusrmrRiwH-5V2otC1hK0g/viewform?embedded=true"
-                width="70%" height="1978" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <section class="vowleCheck">
+        <div class="container">
+            <div class="box p-4 m-2">
+                <h5>Only Vowles</h5>
+                <input type="text" class="form-control col-sm-4" id="vowelInput" aria-describedby="vali"
+                    placeholder="Enter Vowle">
+                    <p id="vowelOutput"></p>
+                    <input type="button" class="btn btn-primary mt-2" value="validate" onclick="checkVowel()" />
+                
+            </div>
+            <div class="box p-4 m-2">
+                <h5>Show/hide image when checking check box</h5>
+                <input type="checkbox" onclick="toggleImg()">
+                <img id="imgid" src="resources/my-avatar.svg" width="50" height="50">
+            </div>
+            <div class="box p-4 m-2">
+                <h5>Calculate GST</h5>
+                <input type="number" class="form-control col-sm-4" id="gstInput" aria-describedby="gst"
+                    placeholder="Enter A Number">
+                <input type="button" class="btn btn-primary mt-2" value="Calculate" onclick="checkGST()" />
+                <p id="gstOutput"></p>
+            </div>
+            <div class="box p-4 m-2">
+                <h5>Date Checker</h5>
+                <input type="date" class="form-control col-sm-4" id="dateInput" aria-describedby="date"
+                    placeholder="Enter A Date">
+                <input type="button" class="btn btn-primary mt-2" value="Format" onclick="checkDate()" />
+                <p id="dateOutput"></p>
+            </div>
         </div>
     </section>
-</body>
-<footer class="page-footer font-small pt-4 customFooter">
-    <div class="footer-copyright text-center py-3">Advanced Web Design, Copyright © 2018:
-        <p>Icons Made By Icomoon from
-            <a href="https://www.flaticon.com">www.flaticon.com</a> is licenced by CC 3.0 BY</p>
-
-    </div>
-</footer>
-
-</html>

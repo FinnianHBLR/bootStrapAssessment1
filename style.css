@@ -254,3 +254,7 @@ body .homePage {
 }
 
 #xmlRows {min-width: 1000px;}
+
+.vowleCheck .box {
+    background-color: #E0E0E0;
+}
