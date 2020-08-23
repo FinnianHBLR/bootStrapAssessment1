@@ -35,7 +35,65 @@ function mailToAddrs() {
 
 }
 
-function resetMail(){
+function getXML(){
+    //Users CORS API (PROXY IS API!!) website as proxy to retrice xml file.
 
+    var proxy = 'https://cors-anywhere.herokuapp.com/';
 
+    //Where is the xml file stored?
+
+    var url = "https://www.nasa.gov/rss/dyn/mission_pages/kepler/news/kepler-newsandfeatures-RSS.rss";
+
+    // XMLhttp request object to send request to server.
+
+    var xhtml = new XMLHttpRequest();
+    //Use this object to send request.
+
+    xhtml.open("GET", proxy + url, true);
+    //True = async
+    
+    xhtml.send();//send reuest to server where it is stored
+    //Check the response from server
+
+    xhtml.onreadystatechange = function() {
+        //FROM: https://www.w3schools.com/xml/tryit.asp?filename=tryxml_app
+        if(this.readyState == 4 && this.status == 200) {
+            //If everyhting is ok we will now load the xml file
+            
+            //document.getElementById("xmlTable").innerHTML = this.responseText;
+
+            var i;
+            var xmlDocument =  this.responseXML;
+            var table ="";
+        
+            var x = xmlDocument.getElementsByTagName("item");
+            for (i = 0; i <x.length; i++) { 
+            table += "<div class=\"col-sm-4 mt-4\"><div class=\"card\"><div class=\"card-body\"><h5 class=\"card-title\">" +
+    
+            x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+            "</h5><p class=\"card-text\">" +
+            x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+            "</p><p class=\"card-text\">Date Published: " + 
+            x[i].getElementsByTagName("pubDate")[0].childNodes[0].nodeValue +
+            "</p><a href=\"" +
+            x[i].getElementsByTagName("link")[0].childNodes[0].nodeValue +
+            "\">Link</a></div></div></div>";
+            }
+            document.getElementById("xmlTable").innerHTML = table;
+            /*This creates a template of 
+            <div class="col-sm-4 mt-4">
+                <div class="card">
+                    <div class=card-body>
+                    <h5 class class=card-title>TITLE</h5>
+                    <p class="card-text">DESCRIPTION</p>
+                    <p class="card-text">date published: + pubDate</p>
+                    <a href="link">LINK</a>
+                    </div>
+                </div>
+            </div>
+            */
+        }
+    }    
 }
+    
+

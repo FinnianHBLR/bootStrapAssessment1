@@ -191,6 +191,8 @@ body .homePage {
     .home p {
         font-size: 1.3em;
     }
+
+
 }
 
 
@@ -251,3 +253,4 @@ body .homePage {
     background-color: #E0E0E0
 }
 
+#xmlRows {min-width: 1000px;}
