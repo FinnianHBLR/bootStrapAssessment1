@@ -156,11 +156,19 @@ body .homePage {
 }
 
 /*------------Footer----------------*/
+
+
 .customFooter {
     color: white;
     background-color: #2a3a4a;
 }
 
+@media only screen and (min-width: 570px) {
+    /*Fixes very annoying... frustraiting bug in the html form just before it goes to tablet mode*/
+    .htmlFormPage .container {
+        min-width: 50em;
+    }
+}
 
 /*This is for a tablets*/
 
@@ -183,7 +191,6 @@ body .homePage {
     .home p {
         font-size: 1.3em;
     }
-    
 }
 
 
@@ -222,3 +229,25 @@ body .homePage {
         font-size: 1.5em;
     }
 }
+
+/*----------------------------html forms------------------------------*/
+.htmlFormhome .htmlFormHomePage {
+    background-color: #7b8091;
+    min-height: 25vh;
+}
+
+/*----------------------------google form-----------------------------*/
+
+/*----------------------------XML Rules-------------------------------*/
+
+
+.xmlRulesHome .xmlHomePage {
+    background-color: #7b8091;
+    min-height: 25vh;
+}
+
+
+.sixXmlRules .container {
+    background-color: #E0E0E0
+}
+
