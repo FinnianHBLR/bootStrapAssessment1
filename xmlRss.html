@@ -45,8 +45,8 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <!--Active home page btn-->
-                    <li class="nav-item customActive">
-                        <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <!--Forms dropbtn, dropdown-contnet reference the hover drop-down in the stylesheet-->
                     <li class="nav-item dropdown">
@@ -61,14 +61,14 @@
                     </li>
                     <!--XML-->
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown customActive">
                         <a class="nav-link dropbtn" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             XML
                         </a>
                         <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/xmlrules.html">XML RULES</a>
-                            <a class="dropdown-item" href="/xmlRss.html">XML RSS</a>
+                            <a class="dropdown-item customActive" href="/xmlRss.html">XML RSS<span class="sr-only">(current)</span></a>
                         </div>
                     </li>
                     <!--Research dropbtn, dropdown-contnet reference the hover drop-down in the stylesheet-->
@@ -107,8 +107,9 @@
                 <p>When working with RSS you need to have an RSS file to request. This can be any XML file, but you should
                     note you will need a proxy for this to work. Depending on the files contents you may have to format
                     it manually using Javascript to work you your website. This has been done below, the data is from
-                    the offical NASA RSS feed <a href="https://www.nasa.gov/rss/dyn/mission_pages/kepler/news/kepler-newsandfeatures-RSS.rss">here.</a></p>
-            </div>
+                    the offical NASA RSS feed <a href="https://www.nasa.gov/rss/dyn/mission_pages/kepler/news/kepler-newsandfeatures-RSS.rss">here.</a>[This may take time to load/need to be reloaded. Herokuapp known Error of too many requests 429]</p>
+                    <p class="rssError"></p>
+                </div>
         </div>
     </section>
     <section>

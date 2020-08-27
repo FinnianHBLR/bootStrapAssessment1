@@ -37,7 +37,7 @@ function mailToAddrs() {
 
 function getXML(){
     //Users CORS API (PROXY IS API!!) website as proxy to retrice xml file.
-
+    
     var proxy = 'https://cors-anywhere.herokuapp.com/';
 
     //Where is the xml file stored?
@@ -91,8 +91,11 @@ function getXML(){
                 </div>
             </div>
             */
+        //} else if(this.readyState == 429 || this.status == 429) {
+          //  document.getElementById("rssError").innerHTML = "ERROR";
+        //}
         }
-    }    
+    }     
 }
     
 
@@ -140,5 +143,13 @@ function checkGST() {
 
 function checkDate() {
     //I know this probably looks bad, but I challanged myself to put this in one line.... so here it is...
-    document.getElementById("dateOutput").innerHTML = newVar = new Date(document.getElementById("dateInput").value).toDateString().substring(3);
+    //document.getElementById("dateOutput").innerHTML = newVar = new Date(document.getElementById("dateInput").value).toDateString().substring(3);
+    //Get date info
+    var date = new Date(document.getElementById("dateInput").value);
+
+    //Use array to store each month as tetx
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    document.getElementById("dateOutput").innerHTML = date.getDate().toString() + " " + months[date.getMonth().toString()] + " "+  date.getFullYear().toString();
+ 
 }
