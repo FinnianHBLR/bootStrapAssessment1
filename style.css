@@ -166,7 +166,7 @@ body .homePage {
 @media only screen and (min-width: 570px) {
     /*Fixes very annoying... frustraiting bug in the html form just before it goes to tablet mode*/
     .htmlFormPage .container {
-        min-width: 50em;
+        min-width: 10em;
     }
 }
 

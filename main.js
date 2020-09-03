@@ -1,4 +1,3 @@
-
 function mailToAddrs() {
     //The variables below reference the inputs on the htmlform.
     var firstName = document.getElementById("inputFirstName1").value;
@@ -10,7 +9,7 @@ function mailToAddrs() {
     var gender1 = document.getElementById("maleCheckRadio6").checked;
     var gender2 = document.getElementById("femaleCheckRadio7").checked;
     var gender3 = document.getElementById("otherCheckRadio8").checked;
-    
+
     var mobileTypeWin = document.getElementById("windowsCheck9").checked;
     var mobileTypeApp = document.getElementById("appleCheck10").checked;
     var mobileTypeAnd = document.getElementById("andriodCheck11").checked;
@@ -72,7 +71,7 @@ function getXML(){
             /*Below creates the inital set up for the cards
             this is added to with the code below. This creates to commented example table below*/
 
-            table += "<div class=\"col-sm-4 mt-4\"><div class=\"card\"><div class=\"card-body\"><h5 class=\"card-title\">" +
+            table += "<div class=\"col-md-4 mt-4\"><div class=\"card\"><div class=\"card-body\"><h5 class=\"card-title\">" +
     
             x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
             "</h5><p class=\"card-text\">" +

@@ -55,7 +55,8 @@
                         </a>
                         <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/googleform.html">GOOGLE</a>
-                            <a class="dropdown-item customActive" href="/htmlform.html">HTML<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item customActive" href="/htmlform.html">HTML<span
+                                    class="sr-only">(current)</span></a>
                         </div>
                     </li>
                     <!--XML-->
@@ -109,152 +110,151 @@
 
     <!--mt-3 allows margine at the top-->
     <section class="htmlFormPage">
+
         <div class="container mt-3">
             <form>
-                <div class="container">
-                    <div class="form-group row">
-                        <label for="firstNameInput" class="col-sm-2 col-form-label">First Name</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" id="inputFirstName1"
-                                placeholder="Enter Your First Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="lastNameInput" class="col-sm-2 col-form-label">Last Name</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" id="inputLastName2"
-                                placeholder="Enter Your Last Name">
-                        </div>
+                <div class="form-group row">
+                    <label for="firstNameInput" class="col-sm-2 col-form-label">First Name</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputFirstName1" placeholder="Enter Your First Name"
+                            required>
                     </div>
                 </div>
-                <!--Next Section of form-->
-                <div class="container">
-                    <h6>Address</h6>
-                    <div class="form-group row">
-                        <label for="addressline1Input" class="col-sm-2 col-form-label">Line 1:</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" id="inputAddressL13"
-                                placeholder="Enter Address Line 1">
-                        </div>
+                <div class="form-group row">
+                    <label for="lastNameInput" class="col-sm-2 col-form-label">Last Name</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputLastName2" placeholder="Enter Your Last Name"
+                            required>
                     </div>
-                    <div class="form-group row">
-                        <label for="addressline1Input" class="col-sm-2 col-form-label">Line 2:</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" id="inputAddressL24"
-                                placeholder="Enter Address Line 2">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="townCityInput" class="col-sm-2 col-form-label">Town/City:</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" id="inputTownCity5"
-                                placeholder="Enter Your Town/City">
-                        </div>
-                    </div>
-                    <fieldset class="form-group">
-                        <div class="row">
-                            <legend class="col-form-label col-sm-2 pt-0">Gender:</legend>
-                            <div class="col-sm-10">
-                                <!--Form-check-inline puts the raios into inline-->
-                                <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios1" id="maleCheckRadio6"
-                                        value="Male">
-                                    <label class="form-check-label" for="gridRadios1">
-                                        Male
-                                    </label>
-                                </div>
-                                <!--Form-check-inline puts the raios into inline-->
-                                <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios1"
-                                        id="femaleCheckRadio7" value="Female">
-                                    <label class="form-check-label" for="gridRadios1">
-                                        Female
-                                    </label>
-                                </div>
-                                <!--Form-check-inline puts the raios into inline-->
-                                <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios1"
-                                        id="otherCheckRadio8" value="Other">
-                                    <label class="form-check-label" for="gridRadios1">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <div class="row">
-                            <legend class="col-form-label col-sm-2 pt-0">Mobile Phone Type:</legend>
-                            <div class="col-sm-10">
-                                <!--Form-check-inline puts the raios into inline-->
-                                <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios2" id="windowsCheck9"
-                                        value="windows">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Windows
-                                    </label>
-                                </div>
-                                <!--Form-check-inline puts the raios into inline-->
-                                <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios2" id="appleCheck10"
-                                        value="Apple">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Apple
-                                    </label>
-                                </div>
-                                <!--Form-check-inline puts the raios into inline-->
-                                <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios2" id="andriodCheck11"
-                                        value="Andrioid">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Andrioid
-                                    </label>
-                                </div>
-                                <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="othercheck12"
-                                        value="Other">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label" for="inlineFormMobile">Mobile Provider</label>
-                        <div class="col-sm-3">
-                            <select class="form-control col-md-7" id="inlineFormMobile">
-                                <option selected>None...</option>
-                                <option value="1">Spark</option>
-                                <option value="2">Vodafone</option>
-                                <option value="3">Now</option>
-                                <option value="3">2degrees</option>
-                                <option value="3">Skinny</option>
-                                <option value="3">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label" for="inlineText">Do you use your phone for study? Please
-                            explain:</label>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <textarea class="form-control" id="textArea13" rows="2"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label"></label>
-                        <div class="col-sm-5">
-                            <!--mr gives spacing between the buttons-->
-                            <input type="button" class="btn btn-primary mr-3" value="Submit" onclick="mailToAddrs()" />
-                            <!--And rest-->
+                </div>
 
-                            <input type="reset" class="btn btn-primary" value="Reset" onclick="resetMail()" />
+                <!--Next Section of form-->
+
+                <h6>Address</h6>
+                <div class="form-group row">
+                    <label for="addressline1Input" class="col-sm-2 col-form-label">Line 1:</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputAddressL13" placeholder="Enter Address Line 1"
+                            required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="addressline1Input" class="col-sm-2 col-form-label">Line 2:</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputAddressL24" placeholder="Enter Address Line 2">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="townCityInput" class="col-sm-2 col-form-label">Town/City:</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputTownCity5" placeholder="Enter Your Town/City"
+                            required>
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Gender:</legend>
+                        <div class="col-sm-10">
+                            <!--Form-check-inline puts the raios into inline-->
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios1" id="maleCheckRadio6"
+                                    value="Male" required>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Male
+                                </label>
+                            </div>
+                            <!--Form-check-inline puts the raios into inline-->
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios1" id="femaleCheckRadio7"
+                                    value="Female" required>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Female
+                                </label>
+                            </div>
+                            <!--Form-check-inline puts the raios into inline-->
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios1" id="otherCheckRadio8"
+                                    value="Other" required>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Mobile Phone Type:</legend>
+                        <div class="col-sm-10">
+                            <!--Form-check-inline puts the raios into inline-->
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios2" id="windowsCheck9"
+                                    value="windows">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Windows
+                                </label>
+                            </div>
+                            <!--Form-check-inline puts the raios into inline-->
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios2" id="appleCheck10"
+                                    value="Apple">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Apple
+                                </label>
+                            </div>
+                            <!--Form-check-inline puts the raios into inline-->
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios2" id="andriodCheck11"
+                                    value="Andrioid">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Andrioid
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="othercheck12"
+                                    value="Other">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="inlineFormMobile">Mobile Provider</label>
+                    <div class="col-sm-3">
+                        <select class="form-control col-md-7" id="inlineFormMobile">
+                            <option selected>None...</option>
+                            <option value="1">Spark</option>
+                            <option value="2">Vodafone</option>
+                            <option value="3">Now</option>
+                            <option value="3">2degrees</option>
+                            <option value="3">Skinny</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="inlineText">Do you use your phone for study? Please
+                        explain:</label>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <textarea class="form-control" id="textArea13" rows="2"></textarea>
                         </div>
                     </div>
                 </div>
-            </form>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-5">
+                        <!--mr gives spacing between the buttons-->
+                        <input type="button" class="btn btn-primary mr-3" value="Submit" onclick="mailToAddrs()" />
+                        <!--And rest-->
+
+                        <input type="reset" class="btn btn-primary" value="Reset" onclick="resetMail()" />
+                    </div>
+                </div>
+        </div>
+        </form>
         </div>
     </section>
 </body>
